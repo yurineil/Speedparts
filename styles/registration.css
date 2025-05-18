@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.register-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 120px;
+    height: auto;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input {
+    margin-right: 5px;
+}
+
+.btn-register {
+    background-color: #243b55;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background-color:  #243b55;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+    color: #dc3545; 
+    font-size: 0.85em;
+    display: block;
+    margin-top: 5px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+    .register-container {
+        padding: 20px;
+    }
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+} /* Additional styling for file upload */
+.permit-upload {
+    margin-top: 15px;
+    display: none; /* Hidden by default */
+}
+.permit-upload label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.permit-upload .file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+.permit-upload input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+}
+.permit-description {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #444;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.btn-google:hover {
+    background-color: #f7f7f7;
+}
+
+.btn-google img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.divider {
+    text-align: center;
+    margin: 15px 0 10px;
+    font-size: 14px;
+    color: #999;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    display: inline-block;
+    width: 40%;
+    height: 1px;
+    background-color: #ccc;
+    vertical-align: middle;
+    margin: 0 5px;
+}
